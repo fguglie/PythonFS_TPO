@@ -1,0 +1,102 @@
+/*Propiedades por defecto del body: Imagen de fondo, tamaño, alto, ancho, color de fondo blanco y color de texto negro*/
+body{
+    background-image: url("./img/fondo.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    background-repeat: no-repeat;
+    color:black;
+    margin: 0px;
+}
+
+#mainContainer{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    column-gap: 10px;
+    /*max-width: 1000px;
+    
+
+    grid-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);*/
+}
+
+.container{
+    margin: 0px 20% 20px;
+}
+
+.box{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.header{
+    height: 60px;
+    color:white;
+    background-color: black;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+}
+
+.navbar{
+    grid-column-start: 9;
+    grid-column-end: 12;
+}
+
+
+.test{
+    color: red;
+
+
+    grid-column-start: 1;
+    grid-column-end: 13;
+    color:white;
+}
+
+  
+.main {
+    margin-top: 60px;
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+#indexMensajePrincipal{
+    grid-column-start: 0;
+    grid-column-end: 8;
+    color: blue;
+}
+
+#indexFoto{
+    grid-column-start: 8;
+    grid-column-end: 12;
+    color: red;
+}
+
+
+  
+  /* Links inside the navbar */
+  .header a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 60px;
+    padding: 0px 16px;
+
+
+    
+  }
+  
+  /* Change background on mouse-over */
+  .header a:hover {
+    background: #ddd;
+    color: black;
+    height: 60px;
+    padding: 0px 16px;
+    text-align: center
+  }
