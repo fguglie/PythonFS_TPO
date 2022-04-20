@@ -1,6 +1,6 @@
 /*Propiedades por defecto del body: Imagen de fondo, tamaño, alto, ancho, color de fondo blanco y color de texto negro*/
 body{
-    background-image: url("./img/fondo.jpg");
+    background-image: url("./img/fondo.png");
     background-size: 100%;
     width: 100%;
     height: auto;
@@ -13,7 +13,7 @@ body{
 #mainContainer{
     margin-top: 100px;
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 65% 35%;
     column-gap: 10px;
     /*max-width: 1000px;
     
@@ -35,26 +35,24 @@ body{
 .header{
     height: 60px;
     color:white;
-    background-color: black;
+    background-color: #de1d22;
     position: fixed;
     top: 0; 
     width: 100%;
+    height: 60px;
 }
 
 .navbar{
     grid-column-start: 9;
     grid-column-end: 12;
+    height: 100%;
+    margin: auto;
 }
 
-
-.test{
-    color: red;
-
-
-    grid-column-start: 1;
-    grid-column-end: 13;
-    color:white;
+#headerHeight{
+    height: 100%;
 }
+
 
   
 .main {
@@ -80,12 +78,11 @@ body{
   /* Links inside the navbar */
   .header a {
     float: right;
-    display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    height: 60px;
+    height: 100%;
     padding: 0px 16px;
 
 
@@ -94,9 +91,117 @@ body{
   
   /* Change background on mouse-over */
   .header a:hover {
-    background: #ddd;
-    color: black;
+    background: #da000b;
+    color: white;
     height: 60px;
     padding: 0px 16px;
     text-align: center
   }
+.header a.selected{
+    background: #cb000b
+}
+
+
+
+
+
+/*Correspondiente al "HOLA" del index, es para que quede a la izquierda*/
+#hola{
+    text-align:start;
+    font-family: 'Anton', sans-serif;
+    color: #1d3557;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+/*Para ajustar la altura y el margen de la descripción de la página principal*/
+#desc{
+    margin:5rem auto auto;
+    height:40%;
+}
+
+/*Ajustes mediaquery para tamaño sm*/
+@media screen and (max-width: 480px) {
+    #desc{
+        height:60%;
+    }
+    #imagenPrincipal{
+        /* visibility: hidden;     */
+        display: none;
+    }
+    #mainContainer{
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .container{
+        margin: 0px 1% 20px;
+    }
+    body{
+        background-image: none;
+    }
+}
+
+
+/*Ajustes mediaquery para tamaño md*/
+@media screen and (min-width: 768px) {
+    #mainContainer{
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 50px;
+    }
+    #imagenPrincipal{
+        height:70%;
+    }
+}
+
+/*Ajustes mediaquery para tamaño lg*/
+@media screen and (min-width: 1024px) {
+    #imagenPrincipal{
+        height:90%;
+    }
+}
+
+#titulo{
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    color: #1d3557;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0.5em;
+}
+
+#descripcion{
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*Propiedades generales de los h2 al h6*/
+h2,h3,h4,h5,h6{
+    font-family: 'Anton', sans-serif;
+    color: #1d3557;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.cool-btn {
+	display: inline-block;
+	font-weight: 400;
+	color: #212529;
+	text-align: center;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	color: #fff;
+	background-color: #ff4a3d;
+}
+
+
+.cool-btn:hover{
+  	background-color: #780101;
+
+}

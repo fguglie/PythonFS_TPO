@@ -32,4 +32,4 @@ Abrir el archivo index.html ubicado en la carpeta principal del repositorio desc
 
 ## Contacto
 Federico Guglielmetti: [fguglie94@gmail.com](mailto:fguglie94@gmail.com)\
-Ezequiel Melía: [ezequiel.melia@hotmail.com](mailto:ezequiel.melia@hotmail.com)
+Ezequiel Melía: [ezequielmelia@hotmail.com](mailto:ezequielmelia@hotmail.com)
