@@ -1,6 +1,6 @@
 /*Propiedades por defecto del body: Imagen de fondo, tamaño, alto, ancho, color de fondo blanco y color de texto negro*/
 body{
-    background-image: url("./img/fondo.png");
+    background-image: url("../img/fondo.png");
     background-size: 100%;
     width: 100%;
     height: auto;
@@ -8,22 +8,62 @@ body{
     background-repeat: no-repeat;
     color:black;
     margin: 0px;
+    font-family: sans-serif !important;
 }
 
 #mainContainer{
-    margin-top: 100px;
     display: grid;
     grid-template-columns: 65% 35%;
     column-gap: 10px;
     /*max-width: 1000px;
-    
-
     grid-gap: 20px;
     grid-template-columns: repeat(12, 1fr);*/
 }
 
+main{
+    margin-top: 100px !important;
+}
+
+
 .container{
     margin: 0px 20% 20px;
+}
+
+.centrado{
+    text-align: center;
+}
+
+
+/* Posicionamiento de las imágenes del footer */
+footer div nav{
+    position:fixed;
+    bottom:7px;
+    width:100%;
+}
+
+/* Distancia entre las imágenes del footer */
+footer div nav a{
+    margin-right: 10px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    column-gap: 10px;
+    position:fixed;
+    bottom:0px;
+    width:100%;
+    background-color: #f2f2f2 !important;
+    height: 50px;
+}
+
+.centradofooter{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
 }
 
 .box{
