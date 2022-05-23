@@ -20,6 +20,13 @@ body{
     grid-template-columns: repeat(12, 1fr);*/
 }
 
+.carreraContainer{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    column-gap: 10px;
+}
+
+
 main{
     margin-top: 100px !important;
 }
@@ -244,4 +251,32 @@ h2,h3,h4,h5,h6{
 .cool-btn:hover{
   	background-color: #780101;
 
+}
+
+.titulosCarrera{
+    background-color: #f83022;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.imagenCarrera{
+    height: 21rem;
+    border-radius: 0.5rem;
+    transition: 00.1s;
+}
+
+.imagenCarrera:hover{
+    height: 21.5rem;
+    border-radius: 0.5rem;
+    transition: 00.1s;
+}
+
+
+li{
+    list-style-type: ;
 }
